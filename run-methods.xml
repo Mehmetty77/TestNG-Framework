@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Caretta-Test-Suite">
+    <test name="test-set-1">
+        <classes>
+            <class name="com.techproed.tests.Day13_WebTables">
+                <methods>
+                    <include name="printRows"></include>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.Day13_WebTables">
+                <methods>
+                    <include name="printCells"></include>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.smoketest.Day12_NegativeLoginTest">
+                <methods>
+                    <include name="invalidID"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+        <!--This class runs 3 method only:
+                       <methods>
+                            <include name="printRows"></include>
+                        </methods>
+                        <methods>
+                            <include name="printCells"></include>
+                        </methods>
+                        <methods>
+                            <include name="invalidID"></include>
+                        </methods>
+        -->
